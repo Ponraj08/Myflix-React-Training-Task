@@ -17,7 +17,7 @@ export const Overall_genre:IOverall_genre[] = [
     genre: "Romance",
     description: "A romantic story.",
     movies: [
-      "Raja Rani","kadhal","LOve"
+      "Raja Rani","kadhal","LOve Today"
     ],
   },
   {

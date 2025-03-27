@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { IOverall_genre } from "../datas/gunerlist";
+import { IOverall_genre } from "../datas/genrelist";
 import Navbar from "../components/navbar";
 
 const Table: React.FC = () => {
@@ -10,7 +10,7 @@ const Table: React.FC = () => {
       <Navbar />
 
       <h1 className="m-3"> {gener.genre} Movies</h1>
-      <table className="table  table-bordered table-hover m-5  ms-3 " style={{ width: "600px" }} >
+      <table className="table  table-bordered table-hover m-5  ms-3 " style={{ maxWidth: "600px" }} >
         <thead>
           <tr>
             <th scope="col">SI.NO</th>
@@ -28,7 +28,7 @@ const Table: React.FC = () => {
           ))}
         </tbody>
 
-        
+
       </table>
     </>
   );

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { IOverall_genre } from "../datas/gunerlist";
+import { IOverall_genre } from "../datas/genrelist";
 
 interface cardProps {
   tabledata: IOverall_genre;
@@ -15,6 +15,7 @@ const Cards: React.FC<cardProps> = ({ tabledata }) => {
         <div className="card-body">
           <h5 className="card-text fs-2">{tabledata.genre}</h5>
           <p className="card-text fs-4">{tabledata.description}</p>
+          <p>{(tabledata.movies).length} movies</p>
 
           <button className="btn btn-dark fs-3" onClick={() => navigate(`/Table/${tabledata.id}`, { state: { tabledata } })}>
             see all

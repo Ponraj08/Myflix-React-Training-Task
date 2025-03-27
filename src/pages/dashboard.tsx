@@ -1,6 +1,6 @@
 import Cards from "../components/Cards";
 import Navbar from "../components/navbar";
-import { Overall_genre } from "../datas/gunerlist";
+import { Overall_genre } from "../datas/genrelist";
 
 import "../App.css"
 
